@@ -14,7 +14,7 @@ export const App = () => {
   return (
     <div className="app container">
       <div className="jumbotron">
-        <p className="lead text-center">Buscador de Imagenes {searchText}</p>
+        <h2 className="text-center text-capitalize">Buscador de Imagenes {searchText}</h2>
         <Buscador searchText={setSearchText} />
       </div>
       <GridPixa nameSeek={searchText} scroll={scroll} />
