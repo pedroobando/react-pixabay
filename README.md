@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto Original de [Crear Apps en 1 hora - Youtube](https://www.youtube.com/watch?v=hScR513gvNo&t=3303s)
+
+Lo elabore con los conocimientos que tengo.
 
 ## Available Scripts
 
