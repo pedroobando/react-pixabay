@@ -1,18 +1,15 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState, useEffect } from 'react';
 import { ImgGridItem } from './ImgGridItem';
 import { Paginacion } from './Paginacion';
-import { getPixabay } from '../helpers/getPixabay';
+import { useFetchPixa } from '../hooks/useFetchPixa';
 
-const Resultado = ({ name = '', scroll }) => {
-  const [dataImags, setDataImags] = useState([]);
+const GridPixa = ({ nameSeek = '', scroll }) => {
   const [pagina, setPagina] = useState(1);
+  const { data } = useFetchPixa(nameSeek, pagina, 20);
 
   useEffect(() => {
-    if (name.trim().length >= 2) {
-      getPixabay(name, pagina, 30).then((imgs) => setDataImags(imgs));
-    }
-  }, [name, pagina]);
+    setPagina(1);
+  }, [nameSeek]);
 
   const mostrarPaginacion = (elementos) => {
     if (elementos.length >= 1)
@@ -34,7 +31,7 @@ const Resultado = ({ name = '', scroll }) => {
   return (
     <>
       <div className="row mx-auto my-3">
-        {dataImags.map(({ largeImageURL, likes, previewURL, tags, views, id }) => (
+        {data.map(({ largeImageURL, likes, previewURL, tags, views, id }) => (
           <ImgGridItem
             key={id}
             largeImageURL={largeImageURL}
@@ -45,9 +42,9 @@ const Resultado = ({ name = '', scroll }) => {
           />
         ))}
       </div>
-      {mostrarPaginacion(dataImags)}
+      {mostrarPaginacion(data)}
     </>
   );
 };
 
-export default Resultado;
+export default GridPixa;

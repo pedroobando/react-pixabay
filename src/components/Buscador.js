@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Buscador = ({ searchText }) => {
   const [inputValue, setInputValue] = useState('');
@@ -12,7 +12,6 @@ const Buscador = ({ searchText }) => {
     e.preventDefault();
     if (inputValue.trim().length >= 2) {
       searchText(inputValue);
-      // setInputValue('');
     }
   };
 
@@ -42,8 +41,8 @@ const Buscador = ({ searchText }) => {
   );
 };
 
-// Buscador.propTypes = {
-//   searchText: PropTypes.func.isRequired,
-// };
+Buscador.propTypes = {
+  searchText: PropTypes.func.isRequired,
+};
 
 export default Buscador;

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import './App.css';
 // import { useFetchPixa } from './hooks/useFetchPixa';
 import Buscador from './components/Buscador';
-import Resultado from './components/Resultado';
+import GridPixa from './components/GridPixa';
 
 export const App = () => {
   const [searchText, setSearchText] = useState('');
@@ -18,7 +17,7 @@ export const App = () => {
         <p className="lead text-center">Buscador de Imagenes {searchText}</p>
         <Buscador searchText={setSearchText} />
       </div>
-      <Resultado name={searchText} scroll={scroll} />
+      <GridPixa nameSeek={searchText} scroll={scroll} />
     </div>
   );
 };
