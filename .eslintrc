@@ -1,0 +1,28 @@
+{
+    "env": {
+      "browser": true,
+      "jest": true,
+      "es6": true
+    },
+    "plugins": ["import", "babel", "react", "react-hooks"],
+    "extends": [
+      "plugin:prettier/recommended",
+      "eslint:recommended",
+      "plugin:react-hooks/recommended"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "parser": "babel-eslint",
+    "rules": {
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error",    
+      "no-console": "warn",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    }
+  }
