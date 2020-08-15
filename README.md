@@ -1,6 +1,6 @@
 Proyecto Original de [Crear Apps en 1 hora - Youtube](https://www.youtube.com/watch?v=hScR513gvNo&t=3303s)
 
-Lo elabore con los conocimientos que tengo.
+Lo elabore con los conocimientos que tengo. - Bootstrap 4 - ReactJS - Hooks
 
 ## Available Scripts
 
