@@ -15,7 +15,7 @@ const Buscador = ({ searchText }) => {
 
   return (
     <>
-      <div className="jumbotron">
+      <div className="jumbotron mt-3">
         <h2 className="text-center text-capitalize">Buscador de Imagenes {inputValue}</h2>
 
         <form onSubmit={handleSubmit}>

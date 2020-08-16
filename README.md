@@ -1,70 +1,34 @@
-Proyecto Original de [Crear Apps en 1 hora - Youtube](https://www.youtube.com/watch?v=hScR513gvNo&t=3303s)
+# Pixebay
 
-Lo elabore con los conocimientos que tengo. - Bootstrap 4 - ReactJS - Hooks
+> Lista de imagenes
 
-## Available Scripts
+> React bootstrap nodejs responsive hook
 
-In the project directory, you can run:
+**Que puedo encontrar aqui y ~~que no~~**
 
-### `yarn start`
+- app en React
+- bootstrap
+- arrow function
+- npm package / yarn
+- hooks - useState / useEffect / useRef / useCallback
+- hooks - useCustonHooks
+- arrows functions
+- ~~class funtions~~
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- For more on these wonderful ~~badgers~~ badges, refer to <a href="http://badges.github.io/badgerbadgerbadger/" target="_blank">`badgerbadgerbadger`</a>.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**_INSERT ANOTHER GRAPHIC HERE_**
 
-### `yarn test`
+[![Pixebay](https://photos.google.com/photo/AF1QipOwSTe5N6bQbR_Yiwtvk0ZHQahAoFJPcwoHw2zt)]()
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Most people will glance at your `README`, _maybe_ star it, and leave
+- Ergo, people should understand instantly what your project is about based on your repo
 
-### `yarn build`
+> Proyecto original [Crear Apps en 1 hora - Youtube](https://www.youtube.com/watch?v=hScR513gvNo&t=3303s)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## License
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- Copyright 2020 © <a href="http://twitter.com/pedroobandox" target="_blank">Pedro Obando</a>.

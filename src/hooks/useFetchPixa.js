@@ -12,8 +12,6 @@ export const useFetchPixa = (name, page) => {
   }, []);
 
   useEffect(() => {
-    // setState({ data: [], loading: true });
-
     if (isMounted && name.trim().length >= 2 && page >= 1) {
       getPixabay(name, page, 20).then((imgs) => setState({ data: imgs, loading: false }));
     }
