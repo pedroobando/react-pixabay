@@ -7,16 +7,13 @@ export const App = () => {
   const [searchText, setSearchText] = useState('');
 
   const scroll = () => {
-    const elemento = document.querySelector('.jumbotron');
+    const elemento = document.querySelector('.app');
     elemento.scrollIntoView({ behavior: 'auto', block: 'start', inline: 'start' });
   };
 
   return (
     <div className="app container">
-      <div className="jumbotron">
-        <h2 className="text-center text-capitalize">Buscador de Imagenes {searchText}</h2>
-        <Buscador searchText={setSearchText} />
-      </div>
+      <Buscador searchText={setSearchText} />
       <GridPixa nameSeek={searchText} scroll={scroll} />
     </div>
   );

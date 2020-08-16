@@ -6,9 +6,6 @@ import { App } from './App';
 
 // https://bootswatch.com/
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// <React.StrictMode>
+
+ReactDOM.render(<App />, document.getElementById('root'));

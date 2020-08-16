@@ -10,6 +10,6 @@ export const getPixabay = async (name, page, per_page) => {
   const retValueApi = await fetch(url);
   const { hits } = await retValueApi.json();
   return hits.map((item) => {
-    return item;
+    return { ...item };
   });
 };

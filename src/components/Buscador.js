@@ -10,33 +10,35 @@ const Buscador = ({ searchText }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputValue.trim().length >= 2) {
-      searchText(inputValue);
-    }
+    searchText(inputValue);
   };
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <div className="row">
-          <div className="form-group col-md-8">
-            <input
-              type="text"
-              className="form-control form-control-lg"
-              placeholder="Busca tu Imagen. (Ejemplo: Futbol)"
-              value={inputValue}
-              onChange={handleInputChange}
-            />
+      <div className="jumbotron">
+        <h2 className="text-center text-capitalize">Buscador de Imagenes {inputValue}</h2>
+
+        <form onSubmit={handleSubmit}>
+          <div className="row">
+            <div className="form-group col-md-8">
+              <input
+                type="text"
+                className="form-control form-control-lg"
+                placeholder="Busca tu Imagen. (Ejemplo: Futbol)"
+                value={inputValue}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div className="form-group col-md-4">
+              <input
+                type="submit"
+                className="btn btn-lg btn-danger btn-block"
+                value="Buscar..."
+              />
+            </div>
           </div>
-          <div className="form-group col-md-4">
-            <input
-              type="submit"
-              className="btn btn-lg btn-danger btn-block"
-              value="Buscar..."
-            />
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </>
   );
 };
